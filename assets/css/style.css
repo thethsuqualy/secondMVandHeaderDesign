@@ -229,7 +229,8 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  .upper-content{
+
+  .upper-content {
     margin-top: 30px;
   }
 
@@ -326,141 +327,356 @@
 }
 
 
-.container{
+.container {
   background-color: rgb(210, 225, 241);
   /* margin-top: 40px; */
-  border-top-right-radius:50px ;
-  border-bottom-right-radius:50px ;
-  padding: 10px 80px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 60px 0 90px;
+    /* padding: 10px 80px; */
   margin-top: 30px;
-  font-family:'Zen Kaku Gothic New' ;
+  font-family: 'Zen Kaku Gothic New';
   font-size: 16px;
 }
-.notice-header{
+
+.inner-container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.notice-header {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
- 
+  margin: 40px 0px;
 }
-.notice-header h1{
- font-size:34px ;
+
+.notice-header h1 {
+  font-size: 34px;
 }
-.header-logo{
+
+.header-logo {
   width: 30px;
   height: 40px;
 }
-.notice{  
-  background-color: rebeccapurple;
-  padding: 70px;
+
+.notice {
+  /* padding: 70px; */
   margin: 20px 0px;
-  border-radius: 30px;
+  border-radius: 25px;
   width: 100%;
   background-color: white;
-  
 }
-.upper-button{
+
+.inner-notice {
+    padding: 70px 20px 78px;
+      max-width: 985px;
+      margin: 20px auto;
+}
+
+.upper-button-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.upper-button {
   display: flex;
   gap: 3px;
- 
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
-.notice-button{
-  font-family: Zen Kaku Gothic New;
-  font-size: 16px;  
-  height: 50px;
+
+.notice-button {
+  height: 60px;
   border-radius: 6px;
   display: flex;
-  gap: 30px;
   align-items: center;
-  padding: 20px 30px;
   text-align: center;
-  width: calc((100% - 15px) / 4 );
+  /* width: calc((100% - 15px) / 4); */
+  width: 232px;
   color: black;
   background-color: rgb(192, 221, 231);
   border: none;
+  font-family: 'Zen Kaku Gothic New';
+  font-size: 16px;
+  padding: 0px 10px;
+  position: relative;
+  padding-left: 30px;
+}
 
-}
-.notice-button:first-child{
-  padding-left: 90px;
- 
-}
-/* img{
+.notice-button::before {
+  content: '';
+  display: inline-block;
   width: 5px;
   height: 5px;
-} */
-/* .content-container{
-  margin: 20px 0px;
-} */
+  background-color: #2547f1;
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-/* .content-container{
+.inner-notice-btn {
   width: 100%;
-  width: ((100%-250px) / 2);
-} */
-.notice-content{
-  display: flex;  
-  gap: 50px;
-  border-bottom: 3px dotted rgb(192, 221, 231);
-  padding: 30px 0px; 
+  text-align: center;
+}
+
+.notice-button p::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #2547f1;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
 
 }
-.notice-content-left{
+
+.notice-button:hover {
+  background-color: rgb(34, 71, 135);
+  color: white;
+}
+
+.notice-button:hover p::before,
+.notice-button:active p::before {
+  background-color: white;
+}
+
+.upper-button p {
+  width: 100%;
+}
+
+.content-container {
+  width: 100%;
+ 
+  margin: 0px 0px 60px 0px;
+}
+
+.notice-content {
+  display: flex;
+  gap: 40px;
+  border-bottom: 3px dotted rgb(192, 221, 231);
+  padding: 20px 0px 0px 0px;
+  
+}
+
+.notice-content-left {
   max-width: 200px;
   height: 100px;
+  width: 100%;
 }
-.notice-content-left span{
-  font-family:'Poppins';
-  font-size: 14px; 
+
+
+.notice-content-left span {
+  font-family: 'Poppins';
+  font-size: 14px;
 }
-.notice-content-left p{
+
+.notice-content-left p {
   color: #2547f1;
+
 }
-.left-text{
+
+.left-text {
   display: flex;
   margin-top: 10px;
-  gap:5px ;
+
 }
-.notice-content-right{
-  line-height: 30px;
+
+.left-text p::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #2547f1;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3px;
+
 }
-.right-logo-date{
+
+.notice-content a {
+  width: calc(100% - 250px);
+}
+
+.notice-content-right {
+  line-height: 23px;
+
+}
+
+.right-logo-date {
   display: flex;
   gap: 5px;
 }
-.right-logo-text{
+
+.right-logo-text {
   display: flex;
   gap: 5px;
 }
-.rectangle{
+
+.right-logo-text-margin {
+  display: flex;
+  gap: 5px;
+}
+
+.rectangle {
   width: 5px;
   height: 13px;
   padding-top: 8px;
 }
-.btn-rectangle{
+
+.btn-rectangle {
   width: 5px;
   height: 5px;
 }
-.date-logo{
+
+.date-logo {
   width: 40px;
-  height: 23px;
-  padding-top: 7px;
+  height: 18px;
 }
-.home-logo{
+
+.home-logo {
   width: 18px;
-  height: 23px;
-   padding-top: 7px;
+  height: 16px;
 }
-.font-poppins{
-  font-family:'Poppins';
+
+.font-poppins {
+  font-family: 'Poppins';
   font-size: 14px;
   color: blue;
 }
-.font-noto{
-  font-family:  'Noto Sans JP';
+
+.font-noto {
+  font-family: 'Noto Sans JP';
   color: blue;
   font-size: 14px;
+  text-decoration: underline;
 }
-.lower-btn{
+
+.lower-btn {
   width: 230px;
   height: 55px;
   justify-content: center;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 14px;
+    padding: 35px 0 30px;
+  }
+
+  .header-logo {
+    width: 25px;
+    height: 30px;
+  }
+
+  .notice-header {
+    margin: 15px 0px;
+  }
+
+  .notice-header h1 {
+    font-size: 22px;
+  }
+
+  .content-container {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .upper-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    row-gap: 6px;
+  }
+
+  .upper-button p {
+    width: 100%;
+  }
+
+  .notice-button {
+    width: calc(50% - 3px);
+    font-size: 14px;
+    gap: 0px;
+    padding: 0px 15px;
+    height: 45px;
+    line-height: 15px;
+  }
+
+  .notice-button p::before {
+    margin-right: 5px;
+  }
+
+  .notice {
+    padding: 18px;
+  }
+
+  .notice-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+
+  .notice-content-left {
+    max-width: 100%;
+    height: 50px;
+    align-items: center;
+  }
+
+  .notice-content a {
+    width: 100%;
+  }
+
+  .left-text {
+    gap: 5px;
+    margin: 0px;
+  }
+
+  .right-logo-date {
+    display: block;
+  }
+
+  .right-logo-text-margin {
+    margin-top: 20px;
+  }
+
+  .font-poppins {
+    font-size: 12px;
+  }
+
+  .lower-btn {
+    height: 45px;
+    margin-top: 20px;
+  }
+
+}
+
+.unorder-list {
+  list-style-type: none;
+}
+
+.unorder-list li {
+  font-size: 16px;
+  color: #4ebcd8;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.unorder-list li::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
