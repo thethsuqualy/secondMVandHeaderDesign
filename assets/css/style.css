@@ -564,7 +564,7 @@
 
 .info-btn::after {
   content: '';
-  background: url(/assets/img/btn-white-circle.png)no-repeat;
+  background: url(../img/btn-white-circle.png)no-repeat;
   background-size: contain;
   position: absolute;
   width: 36px;
@@ -575,7 +575,7 @@
 }
 
 .info-btn:hover::after {
-  background: url(/assets/img/btn-circle.png) no-repeat;
+  background: url(../img/btn-circle.png) no-repeat;
   background-size: contain;
 }
 
