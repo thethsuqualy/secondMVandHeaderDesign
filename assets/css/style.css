@@ -356,7 +356,7 @@
 
 .notice-header::before {
   content: "";
-  background: url(/assets/img/header-logo.png)no-repeat;
+  background: url(../img/header-logo.png)no-repeat;
   background-size: contain;
   width: 30px;
   height: 40px;
