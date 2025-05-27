@@ -112,3 +112,7 @@ Background Color
 .bg-blue-two {
     background-color: #002483;
 }
+
+.over-hidden {
+    overflow: hidden;
+}
