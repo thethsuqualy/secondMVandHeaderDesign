@@ -240,6 +240,7 @@
     padding: 9px 0px 8px 15px;
     background-color: #f2f2f5;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 99;
   }
@@ -290,10 +291,13 @@
     align-items: start;
     gap: 10px;
   }
+  .menu-ul li{
+    width: 100%;
+  }
 
   .mv-bg {
     position: relative;
-    top: 77px;
+    margin-top: 77px;
   }
 
   .menu-a::after {
@@ -316,9 +320,7 @@
   }
 
   .menu.show {
-    display: flex;
-    /* position: fixed; */
-   
+    display: flex; 
   }
 
   .hamburger.active .bar:nth-child(1) {
@@ -431,18 +433,22 @@
   text-align: center;
 }
 
-.notice-button:active {
+.notice-button.active {
   background-color: rgb(34, 71, 135);
   color: white;
 }
 
-.notice-button:active::before {
+.notice-button.active::before {
   background-color: white;
 }
 
 .content-container {
   width: 100%;
   margin: 0px 0px 60px 0px;
+  display: none;
+}
+.content-container.show{
+  display: block;
 }
 
 .notice-content {
