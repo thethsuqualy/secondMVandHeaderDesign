@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Header end
 
 
-  // tab setart
+  // tab start
   // const btns = document.querySelectorAll(".notice-button ");
   // btns.forEach(function(btn) {
   //   btn.addEventListener("click", function(e) {
